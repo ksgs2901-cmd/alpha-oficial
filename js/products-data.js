@@ -1332,11 +1332,18 @@ window.ALPHA_PRODUCT_IMAGES = {
   "camisa-tricot": "../images/imgi_22_camisa-tricot-1-CDjE8XF6.jpg",
   "tech-daily": "../images/imgi_23_tech-daily-v2-1-eDMuojfQ.png"
 };
+window.ALPHA_PRODUCT_GALLERIES = {
+  "kit-4-calcas-dryfit": [
+    "../images/comfort-tech-kit-main-v2-vertical.png",
+    "../images/comfort-tech-preta-detail.png",
+    "../images/comfort-tech-bege-detail.png"
+  ]
+};
 window.ALPHA_PRODUCTS.products.forEach(function (product) {
   var image = window.ALPHA_PRODUCT_IMAGES[product.id];
   if (!image) return;
   product.image = image;
-  product.images = [image];
+  product.images = window.ALPHA_PRODUCT_GALLERIES[product.id] || [image];
   if (product.colors) {
     product.colors.forEach(function (color) { color.image = image; });
   }
