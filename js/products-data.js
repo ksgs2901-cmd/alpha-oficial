@@ -21,7 +21,8 @@ window.ALPHA_PRODUCTS = {
         "../images/p1/6.jpg",
         "../images/p1/7.jpg",
         "../images/p1/8.jpg",
-        "../images/p1/9.jpg"
+        "../images/p1/9.jpg",
+        "../images/p1/tabela-medidas.jpg"
       ],
       "sizes": [
         "36",
@@ -240,7 +241,8 @@ window.ALPHA_PRODUCTS = {
         "../images/p6/2.jpg",
         "../images/p6/3.jpg",
         "../images/p6/4.png",
-        "../images/p6/5.jpg"
+        "../images/p6/5.jpg",
+        "../images/p6/tabela-medidas.jpg"
       ],
       "sizes": [
         "36",
@@ -384,7 +386,8 @@ window.ALPHA_PRODUCTS = {
         "../images/p9/6.png",
         "../images/p9/7.jpg",
         "../images/p9/8.jpg",
-        "../images/p9/9.png"
+        "../images/p9/9.png",
+        "../images/p9/tabela-medidas.jpg"
       ],
       "sizes": [
         "PP",
@@ -1337,7 +1340,16 @@ window.ALPHA_PRODUCT_GALLERIES = {
     "../images/comfort-tech-kit-main-v2-vertical.png",
     "../images/comfort-tech-preta-detail.png",
     "../images/comfort-tech-bege-detail.png",
-    "../images/comfort-tech-azul-marinho-detail.png"
+    "../images/comfort-tech-azul-marinho-detail.png",
+    "../images/p1/tabela-medidas.jpg"
+  ],
+  "calca-jeans-kit-3": [
+    "../images/calca-jeans-kit-grupo-DiVOSQ0C.jpg",
+    "../images/p6/tabela-medidas.jpg"
+  ],
+  "jogger-skinny": [
+    "../images/jogger-skinny-1-CyCatz52.jpg",
+    "../images/p9/tabela-medidas.jpg"
   ]
 };
 window.ALPHA_PRODUCTS.products.forEach(function (product) {

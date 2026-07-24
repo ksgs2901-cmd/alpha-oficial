@@ -10,9 +10,25 @@
     .page-content p { color: var(--muted-foreground, #64748b); line-height: 1.7; margin-bottom: 16px; }
   </style>
   <script src="/_external/cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = "2.0";
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+        fbq("init", "4371125873201817");
+        fbq("track", "PageView");
+    </script>
+    <!-- End Meta Pixel Code -->
   <!-- UTMIFY Pixel -->
   <script>
-    window.pixelId = "6a34306b9ab9dbce9fcfef33";
+    window.pixelId = "6a630084f50f2618ddd4cfa2";
     var a = document.createElement("script");
     a.setAttribute("async", "");
     a.setAttribute("defer", "");
@@ -40,6 +56,10 @@
 [class*="motion-"]:not([class*="motion-safe"]) { opacity: 1 !important; transform: none !important; filter: none !important; }
 </style></head>
 <body>
+    <!-- Meta Pixel noscript fallback -->
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=4371125873201817&ev=PageView&noscript=1" /></noscript>
+
   <!-- Header -->
   <div class="bg-foreground text-background">
     <div class="text-center py-2 text-[11px] md:text-xs font-medium">Frete Grátis em compras acima de R$ 59</div>
