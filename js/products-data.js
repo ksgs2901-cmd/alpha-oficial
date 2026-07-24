@@ -1336,7 +1336,8 @@ window.ALPHA_PRODUCT_GALLERIES = {
   "kit-4-calcas-dryfit": [
     "../images/comfort-tech-kit-main-v2-vertical.png",
     "../images/comfort-tech-preta-detail.png",
-    "../images/comfort-tech-bege-detail.png"
+    "../images/comfort-tech-bege-detail.png",
+    "../images/comfort-tech-azul-marinho-detail.png"
   ]
 };
 window.ALPHA_PRODUCTS.products.forEach(function (product) {
