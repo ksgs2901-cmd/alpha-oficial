@@ -4,13 +4,13 @@ window.ALPHA_PRODUCTS = {
       "id": "kit-4-calcas-dryfit",
       "slug": "kit-4-calcas-dryfit-tactel-elastano-respiravel-secagem-rapida",
       "name": "Kit com 3 Calças Comfort Tech Premium",
-      "price": 79.9,
+      "price": 57.9,
       "priceOriginal": 199.9,
-      "discount": 50,
+      "discount": 71,
       "rating": 4.9,
       "reviews": 312,
       "installments": 12,
-      "installmentValue": 6.66,
+      "installmentValue": 4.83,
       "image": "../images/p1/1.jpg",
       "images": [
         "../images/p1/1.jpg",
@@ -35,7 +35,7 @@ window.ALPHA_PRODUCTS = {
       ],
       "box": {
         "title": "KIT COM 3 CALÇAS — OFERTA QUE NÃO VOLTA",
-        "message": "<strong class=\"text-foreground\">3 calças Comfort Tech Premium por menos de R$ 80.</strong> Isso é menos de <strong class=\"text-foreground\">R$ 27 por calça</strong>. Com <strong class=\"text-foreground\">frete grátis</strong> e entrega rápida, essa é a oportunidade perfeita pra renovar seu guarda-roupa com <strong class=\"text-foreground\">peças tecnológicas de alta performance</strong>. Estoque limitado — quando acabar, <strong class=\"text-foreground\">não sabemos quando volta</strong>."
+        "message": "<strong class=\"text-foreground\">3 calças Comfort Tech Premium por menos de R$ 58.</strong> Isso é menos de <strong class=\"text-foreground\">R$ 20 por calça</strong>. Com <strong class=\"text-foreground\">frete grátis</strong> e entrega rápida, essa é a oportunidade perfeita pra renovar seu guarda-roupa com <strong class=\"text-foreground\">peças tecnológicas de alta performance</strong>. Estoque limitado — quando acabar, <strong class=\"text-foreground\">não sabemos quando volta</strong>."
       },
       "checkoutUrl": "https://www.alphaoficial-loja.com/produto/kit-4-calcas-dryfit-tactel-elastano-respiravel-secagem-rapida"
     },
