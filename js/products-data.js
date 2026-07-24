@@ -3,7 +3,7 @@ window.ALPHA_PRODUCTS = {
     {
       "id": "kit-4-calcas-dryfit",
       "slug": "kit-4-calcas-dryfit-tactel-elastano-respiravel-secagem-rapida",
-      "name": "Kit com 4 Calças DryFit em Tactel – Elastano, Respirável e Secagem Rápida",
+      "name": "Kit com 3 Calças Comfort Tech Premium",
       "price": 79.9,
       "priceOriginal": 199.9,
       "discount": 50,
@@ -34,8 +34,8 @@ window.ALPHA_PRODUCTS = {
         "50"
       ],
       "box": {
-        "title": "KIT COM 4 CALÇAS — OFERTA QUE NÃO VOLTA",
-        "message": "<strong class=\"text-foreground\">4 calças jogger DryFit por menos de R$ 80.</strong> Isso é menos de <strong class=\"text-foreground\">R$ 20 por calça</strong>. Com <strong class=\"text-foreground\">frete grátis</strong> e entrega rápida, essa é a oportunidade perfeita pra renovar seu guarda-roupa com <strong class=\"text-foreground\">peças tecnológicas de alta performance</strong>. Estoque limitado — quando acabar, <strong class=\"text-foreground\">não sabemos quando volta</strong>."
+        "title": "KIT COM 3 CALÇAS — OFERTA QUE NÃO VOLTA",
+        "message": "<strong class=\"text-foreground\">3 calças Comfort Tech Premium por menos de R$ 80.</strong> Isso é menos de <strong class=\"text-foreground\">R$ 27 por calça</strong>. Com <strong class=\"text-foreground\">frete grátis</strong> e entrega rápida, essa é a oportunidade perfeita pra renovar seu guarda-roupa com <strong class=\"text-foreground\">peças tecnológicas de alta performance</strong>. Estoque limitado — quando acabar, <strong class=\"text-foreground\">não sabemos quando volta</strong>."
       },
       "checkoutUrl": "https://www.alphaoficial-loja.com/produto/kit-4-calcas-dryfit-tactel-elastano-respiravel-secagem-rapida"
     },

@@ -1,5 +1,5 @@
 const PRODUCTS = Object.freeze({
-  "kit-4-calcas-dryfit": { name: "Kit com 4 Calças DryFit em Tactel – Elastano, Respirável e Secagem Rápida", price: 7990 },
+  "kit-4-calcas-dryfit": { name: "Kit com 3 Calças Comfort Tech Premium", price: 7990 },
   "kit-3-oversized": { name: "KIT 3 CAMISETA Masculina Oversized Lisa Classica Basica Manga Curta Verão - Pague 1 Leve 3", price: 5990 },
   "kit-3-polo-poliamida": { name: "Kit 3 Camiseta Masculina Polo Poliamida Tecnológica Premium - Pague 1 Leve 3", price: 6990 },
   "tenis-slip-on": { name: "Tênis Masculino Slip On Casual Confortável Leve Dia a Dia", price: 6990 },
