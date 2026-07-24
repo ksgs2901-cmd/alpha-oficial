@@ -83,6 +83,11 @@
     renderRelated();
     renderBox();
 
+    var comfortDetails = document.getElementById('comfort-tech-details');
+    if (comfortDetails) {
+      comfortDetails.style.display = product.id === 'kit-4-calcas-dryfit' ? 'block' : 'none';
+    }
+
     var buyBtn = document.getElementById('prod-buy-btn');
 
     if (product.available === false) {

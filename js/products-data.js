@@ -3,17 +3,17 @@ window.ALPHA_PRODUCTS = {
     {
       "id": "kit-4-calcas-dryfit",
       "slug": "kit-4-calcas-dryfit-tactel-elastano-respiravel-secagem-rapida",
-      "name": "Kit com 4 Calças DryFit em Tactel – Elastano, Respirável e Secagem Rápida",
-      "price": 79.9,
+      "name": "Kit com 3 Calças Comfort Tech Premium",
+      "price": 57.9,
       "priceOriginal": 199.9,
-      "discount": 50,
+      "discount": 71,
       "rating": 4.9,
       "reviews": 312,
       "installments": 12,
-      "installmentValue": 6.66,
-      "image": "../images/p1/1.jpg",
+      "installmentValue": 4.83,
+      "image": "../images/comfort-tech-premium-main.png",
       "images": [
-        "../images/p1/1.jpg",
+        "../images/comfort-tech-premium-main.png",
         "../images/p1/2.jpg",
         "../images/p1/3.jpg",
         "../images/p1/4.jpg",
@@ -34,8 +34,8 @@ window.ALPHA_PRODUCTS = {
         "50"
       ],
       "box": {
-        "title": "KIT COM 4 CALÇAS — OFERTA QUE NÃO VOLTA",
-        "message": "<strong class=\"text-foreground\">4 calças jogger DryFit por menos de R$ 80.</strong> Isso é menos de <strong class=\"text-foreground\">R$ 20 por calça</strong>. Com <strong class=\"text-foreground\">frete grátis</strong> e entrega rápida, essa é a oportunidade perfeita pra renovar seu guarda-roupa com <strong class=\"text-foreground\">peças tecnológicas de alta performance</strong>. Estoque limitado — quando acabar, <strong class=\"text-foreground\">não sabemos quando volta</strong>."
+        "title": "KIT COM 3 CALÇAS — OFERTA QUE NÃO VOLTA",
+        "message": "<strong class=\"text-foreground\">3 calças Comfort Tech Premium por menos de R$ 58.</strong> Isso é menos de <strong class=\"text-foreground\">R$ 20 por calça</strong>. Com <strong class=\"text-foreground\">frete grátis</strong> e entrega rápida, essa é a oportunidade perfeita pra renovar seu guarda-roupa com <strong class=\"text-foreground\">peças tecnológicas de alta performance</strong>. Estoque limitado — quando acabar, <strong class=\"text-foreground\">não sabemos quando volta</strong>."
       },
       "checkoutUrl": "https://www.alphaoficial-loja.com/produto/kit-4-calcas-dryfit-tactel-elastano-respiravel-secagem-rapida"
     },
@@ -1294,3 +1294,50 @@ window.ALPHA_PRODUCTS = {
   ]
 }
 ;
+
+
+// Product exports contain gallery paths that were not included in the static bundle.
+// Use each product's bundled catalog image so product pages never render broken media.
+window.ALPHA_PRODUCT_IMAGES = {
+  "kit-4-calcas-dryfit": "../images/comfort-tech-premium-main.png",
+  "kit-3-oversized": "../images/imgi_4_kit3-oversized-1-BcZAfnca.png",
+  "kit-3-polo-poliamida": "../images/polo-poliamida-kit-Vn6E7qXW.jpg",
+  "tenis-slip-on": "../images/tenis-slip-on-preto-CbVnRw2v.jpg",
+  "jaqueta-sarja-forrada": "../images/jaqueta-sarja-marrom-CpB__KGp.jpg",
+  "calca-jeans-kit-3": "../images/calca-jeans-kit-grupo-DiVOSQ0C.jpg",
+  "moletom-paris": "../images/moletom-paris-preto-BuaPFBYi.png",
+  "cuecas-dogzurb": "../images/dogzurb-cueca-2-XxjFkO5T.jpg",
+  "jogger-skinny": "../images/jogger-skinny-1-CyCatz52.jpg",
+  "tenis-academia": "../images/tenis-academia-cinza-1-BhC0eQUi.jpg",
+  "jaqueta-sarja-kit-3": "../images/kit-jaqueta-sarja-lookbook-BH7MnsgR.jpg",
+  "polo-old-money": "../images/polo-old-money-trio-9xm7DQXm.jpg",
+  "kit-body-splash-trio": "../images/imgi_13_perfume-kit-trio-Cop33tIK.png",
+  "kit-body-splash-barbours": "../images/body-splash-barbours-trio-CyxVq0BV.png",
+  "cuecas-dryfit": "../images/profit-cueca-1-BOV-Wsen.png",
+  "bermuda-monster": "../images/bermuda-monster-2-DGtW7yxd.jpg",
+  "camisa-polo-ventura": "../images/imgi_5_camisa-polo-clock-bBh7Yyvb.jpg",
+  "camisa-polo-court": "../images/imgi_6_camisa-polo-court-f2ZAl7iy.jpg",
+  "relogio-pagani": "../images/imgi_7_relogio-pagani-BBoldmtl.jpg",
+  "relogio-chronos": "../images/imgi_8_relogio-chronos-CrYJmHdS.jpg",
+  "kit-short-linho": "../images/imgi_9_short-linho-kit-B0jnyAhe.jpg",
+  "camisa-linho-rout": "../images/imgi_10_camisa-linho-rout-xCElrOHP.jpg",
+  "sapato-oxford": "../images/imgi_11_sapato-oxford-CpnawWoZ.jpg",
+  "porta-cartao": "../images/imgi_12_porta-cartao-C_gMhtw1.jpg",
+  "relogio-classic": "../images/imgi_16_relogio-classic-BYPZ4APu.jpg",
+  "carteira-couro": "../images/imgi_17_carteira-couro-B8dWPTBQ.jpg",
+  "oculos-aviador": "../images/imgi_18_oculos-aviador-YCEXsqsw.jpg",
+  "cinto-couro": "../images/imgi_19_cinto-couro-BI14cMB7.jpg",
+  "mocassim": "../images/imgi_20_mocassim-premium-CRGFy5A8.jpg",
+  "sueter-tricot": "../images/imgi_21_sueter-tricot-Byoq36rv.jpg",
+  "camisa-tricot": "../images/imgi_22_camisa-tricot-1-CDjE8XF6.jpg",
+  "tech-daily": "../images/imgi_23_tech-daily-v2-1-eDMuojfQ.png"
+};
+window.ALPHA_PRODUCTS.products.forEach(function (product) {
+  var image = window.ALPHA_PRODUCT_IMAGES[product.id];
+  if (!image) return;
+  product.image = image;
+  product.images = [image];
+  if (product.colors) {
+    product.colors.forEach(function (color) { color.image = image; });
+  }
+});
