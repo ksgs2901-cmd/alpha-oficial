@@ -50,7 +50,6 @@ test("creates a BlackCat sale without exposing the API key", async (t) => {
             status: "PENDING",
             paymentData: {
               copyPaste: "000201-pix-test",
-              qrCodeBase64: "data:image/png;base64,AAAA",
               expiresAt: "2030-01-01T00:00:00.000Z"
             }
           }
@@ -98,5 +97,14 @@ test("creates a BlackCat sale without exposing the API key", async (t) => {
   assert.equal(providerRequest.options.headers["X-API-Key"], "test-secret");
   assert.equal(providerRequest.body.amount, 5391);
   assert.equal(providerRequest.body.postbackUrl, "https://alpha.example/api/blackcat-webhook");
+  assert.match(res.payload.data.qrCodeBase64, /^data:image\/png;base64,iVBOR/);
   assert.equal(JSON.stringify(res.payload).includes("test-secret"), false);
+});
+
+test("normalizes a raw PNG returned by the provider", async () => {
+  const image = await pixHandler._test.qrCodeImage({
+    copyPaste: "000201-pix-test",
+    qrCodeBase64: "iVBORw0KGgoAAAA"
+  });
+  assert.equal(image, "data:image/png;base64,iVBORw0KGgoAAAA");
 });

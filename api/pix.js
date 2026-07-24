@@ -1,4 +1,5 @@
 const crypto = require("crypto");
+const QRCode = require("qrcode");
 const { PRODUCTS } = require("../server/catalog");
 const { BlackCatError, createSale } = require("../server/blackcat");
 
@@ -129,6 +130,25 @@ function sendError(res, error) {
   });
 }
 
+async function qrCodeImage(paymentData) {
+  const providerImage = String(paymentData.qrCodeBase64 || "").trim();
+  if (/^data:image\/png;base64,[A-Za-z0-9+/=\s]+$/.test(providerImage)) {
+    return providerImage.replace(/\s/g, "");
+  }
+  if (/^iVBORw0KGgo[A-Za-z0-9+/=\s]+$/.test(providerImage)) {
+    return "data:image/png;base64," + providerImage.replace(/\s/g, "");
+  }
+
+  // Some BlackCat acquirers return only the EMV copy-and-paste payload.
+  // Generate the visual QR on our backend so the payment is always scannable.
+  return QRCode.toDataURL(paymentData.copyPaste, {
+    type: "image/png",
+    errorCorrectionLevel: "M",
+    margin: 2,
+    width: 360
+  });
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
   if (req.method !== "POST") {
@@ -182,6 +202,7 @@ module.exports = async function handler(req, res) {
     ) {
       throw new BlackCatError("O provedor não retornou um PIX válido.", 502, "INVALID_PIX_RESPONSE");
     }
+    const qrCodeBase64 = await qrCodeImage(transaction.paymentData);
 
     return res.status(201).json({
       success: true,
@@ -189,7 +210,7 @@ module.exports = async function handler(req, res) {
         transactionId: transaction.transactionId,
         status: transaction.status || "PENDING",
         amount,
-        qrCodeBase64: transaction.paymentData.qrCodeBase64 || "",
+        qrCodeBase64,
         copyPaste: transaction.paymentData.copyPaste,
         expiresAt: transaction.paymentData.expiresAt || ""
       }
@@ -203,5 +224,6 @@ module.exports._test = {
   buildItems,
   buildCustomer,
   buildShipping,
-  validDocument
+  validDocument,
+  qrCodeImage
 };
