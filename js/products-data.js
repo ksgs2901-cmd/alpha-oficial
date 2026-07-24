@@ -11,9 +11,9 @@ window.ALPHA_PRODUCTS = {
       "reviews": 312,
       "installments": 12,
       "installmentValue": 4.83,
-      "image": "../images/p1/1.jpg",
+      "image": "../images/comfort-tech-premium-main.png",
       "images": [
-        "../images/p1/1.jpg",
+        "../images/comfort-tech-premium-main.png",
         "../images/p1/2.jpg",
         "../images/p1/3.jpg",
         "../images/p1/4.jpg",
@@ -1299,7 +1299,7 @@ window.ALPHA_PRODUCTS = {
 // Product exports contain gallery paths that were not included in the static bundle.
 // Use each product's bundled catalog image so product pages never render broken media.
 window.ALPHA_PRODUCT_IMAGES = {
-  "kit-4-calcas-dryfit": "../images/p1/1.jpg",
+  "kit-4-calcas-dryfit": "../images/comfort-tech-premium-main.png",
   "kit-3-oversized": "../images/imgi_4_kit3-oversized-1-BcZAfnca.png",
   "kit-3-polo-poliamida": "../images/polo-poliamida-kit-Vn6E7qXW.jpg",
   "tenis-slip-on": "../images/tenis-slip-on-preto-CbVnRw2v.jpg",
